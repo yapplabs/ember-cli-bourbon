@@ -11,6 +11,12 @@ to add the following to your `app.scss`:
 
     @import "bourbon";
 
+## Dependencies
+
+Your project should already be set up to handle sass/scss builds. If you're not, do so by running:
+
+    npm install broccoli-sass --save-dev
+
 ## Usage
 
 In your ember-cli (>= 0.1.1) project, run:
