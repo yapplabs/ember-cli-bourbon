@@ -1,6 +1,6 @@
 # ember-cli-bourbon
 
-Include boubon in an ember-cli app.
+Include bourbon in an ember-cli app.
 
 When the addon is installed, it will add bourbon 3.2.1 as
 a bower dependency. (The newer bourbon 4.0.x is not compatible with node-sass at the time of
