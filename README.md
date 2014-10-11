@@ -21,10 +21,9 @@ Your project should already be set up to handle sass/scss builds. If you're not,
 
 In your ember-cli (>= 0.1.1) project, run:
 
-    npm install ember-cli-bourbon --save
+    npm install ember-cli-bourbon --save-dev
+    ember g ember-cli-bourbon
     bower install
-
-Then add `@import "bourbon"` to the top of `app/styles/app.scss`.
 
 ## Developing this Addon
 
