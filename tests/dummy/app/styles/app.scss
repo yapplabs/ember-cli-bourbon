@@ -1,0 +1,20 @@
+@import "bourbon";
+
+ol {
+  > li {
+    background-color: #F4F5F7;
+    @include background-image( linear-gradient(to left, #0ff, #F4F5F7) );
+    font-family: $lucida-grande;
+    position: relative;
+    @include transition( all 0.8s );
+
+    &::after {
+      content: "dev";
+      height: 26px;
+      @include position( absolute, 0px 50px 0 50px );
+      @include transform( rotate(25deg) skew(10deg, 20deg) );
+      color: blue;
+      width: 33px;
+    }
+  }
+}
