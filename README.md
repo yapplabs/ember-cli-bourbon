@@ -23,7 +23,6 @@ In your ember-cli (>= 0.1.1) project, run:
 
     npm install ember-cli-bourbon --save-dev
     ember g ember-cli-bourbon
-    bower install
 
 ## Developing this Addon
 
