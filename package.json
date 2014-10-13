@@ -31,10 +31,6 @@
     "express": "^4.8.5",
     "glob": "^4.0.5"
   },
-  "dependencies": {
-    "broccoli-unwatched-tree": "^0.1.1",
-    "broccoli-static-compiler": "^0.2.1"
-  },
   "keywords": [
     "ember-addon"
   ],
