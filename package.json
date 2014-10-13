@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-bourbon",
   "description": "Include boubon in an ember-cli app",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "directories": {
     "doc": "doc",
     "test": "tests"
