@@ -7,9 +7,9 @@ module.exports = {
     return path.join(__dirname, 'blueprints');
   },
   treeForStyles: function() {
-    var bourbonPath = path.join(this.app.bowerDirectory, 'bourbon', 'dist');
+    var bourbonPath = path.join(this.app.bowerDirectory, 'bourbon', 'app');
     var bourbonTree = this.pickFiles(this.treeGenerator(bourbonPath), {
-      srcDir: '/',
+      srcDir: '/assets/stylesheets',
       destDir: '/app/styles'
     });
     return bourbonTree;
