@@ -6,6 +6,6 @@ module.exports = {
   },
 
   afterInstall: function(options) {
-    return this.addBowerPackageToProject('bourbon', '3.2.1');
+    return this.addBowerPackageToProject('bourbon', '4.2.1');
   }
 };
