@@ -1,20 +1,28 @@
 @import "bourbon";
 
-ol {
+ol.devs {
+  position:relative;
   > li {
-    background-color: #F4F5F7;
-    @include background-image( linear-gradient(to left, #0ff, #F4F5F7) );
     font-family: $lucida-grande;
     position: relative;
-    @include transition( all 0.8s );
-
+    opacity: 0.6;
+    @include transition( all 0.5s );
     &::after {
       content: "dev";
       height: 26px;
+      width: 33px;
       @include position( absolute, 0px 50px 0 50px );
+      @include transition( all 0.5s );
+    }
+  }
+  > li.cool {
+    opacity: 1.0;
+    background-color: #F4F5F7;
+    @include background-image( linear-gradient(to left, #0ff, #F4F5F7) );
+
+    &::after {
       @include transform( rotate(25deg) skew(10deg, 20deg) );
       color: blue;
-      width: 33px;
     }
   }
 }

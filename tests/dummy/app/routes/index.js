@@ -5,8 +5,7 @@ export default Ember.Route.extend({
     return [
       { name: 'Ray' },
       { name: 'Kris' },
-      { name: 'Stef' },
-      { name: 'Denis' },
+      { name: 'Chris' },
       { name: 'Luke' }
     ];
   }

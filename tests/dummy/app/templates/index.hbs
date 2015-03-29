@@ -1,5 +1,7 @@
-<ol>
-  {{#each}}
-    <li>{{name}}</li>
+<ol class="devs">
+  {{#each model as |person|}}
+    <li class="{{if isCool 'cool'}}">{{person.name}}</li>
   {{/each}}
 </ol>
+
+<button {{action "toggleCool"}}>Make 'em {{if isCool 'un'}}cool</button>
