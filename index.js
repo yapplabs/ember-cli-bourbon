@@ -2,6 +2,7 @@
 'use strict';
 
 var path = require('path');
+var Funnel = require('broccoli-funnel');
 
 module.exports = {
   name: 'ember-cli-bourbon',
@@ -10,7 +11,7 @@ module.exports = {
   },
   treeForStyles: function() {
     var bourbonPath = path.join(this.app.bowerDirectory, 'bourbon', 'app');
-    var bourbonTree = this.pickFiles(this.treeGenerator(bourbonPath), {
+    var bourbonTree = new Funnel(this.treeGenerator(bourbonPath), {
       srcDir: '/assets/stylesheets',
       destDir: '/app/styles'
     });
