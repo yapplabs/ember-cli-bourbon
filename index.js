@@ -10,7 +10,7 @@ module.exports = {
   },
   treeForStyles: function() {
     var bourbonPath = path.join(this.app.bowerDirectory, 'bourbon', 'app');
-    var bourbonTree = this.pickFiles(this.treeGenerator(bourbonPath), {
+    var bourbonTree = funnel(this.treeGenerator(bourbonPath), {
       srcDir: '/assets/stylesheets',
       destDir: '/app/styles'
     });
