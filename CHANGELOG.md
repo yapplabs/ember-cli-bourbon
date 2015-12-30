@@ -1,7 +1,13 @@
 # Change Log
 
-## [v1.1.0](https://github.com/yapplabs/ember-cli-bourbon/tree/v1.1.0)
+## [v1.2.0](https://github.com/yapplabs/ember-cli-bourbon/tree/v1.2.0) (2015-12-30)
+[Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v1.1.0...v1.2.0)
 
+**Merged pull requests:**
+
+- These fixes allow ember-cli-bourbon to be used as a Nested addon. [\#13](https://github.com/yapplabs/ember-cli-bourbon/pull/13) ([joedaniels29](https://github.com/joedaniels29))
+
+## [v1.1.0](https://github.com/yapplabs/ember-cli-bourbon/tree/v1.1.0) (2015-08-08)
 [Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v1.0.1...v1.1.0)
 
 **Closed issues:**
