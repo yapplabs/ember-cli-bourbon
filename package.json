@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-bourbon",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Include bourbon in an ember-cli app",
   "directories": {
     "doc": "doc",
