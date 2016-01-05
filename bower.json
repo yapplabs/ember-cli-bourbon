@@ -14,6 +14,6 @@
     "qunit": "~1.18.0"
   },
   "devDependencies": {
-    "bourbon": "~4.2.3"
+    "bourbon": "~4.2.6"
   }
 }
