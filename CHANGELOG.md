@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.2.1](https://github.com/yapplabs/ember-cli-bourbon/tree/v1.2.1) (2016-01-05)
+[Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v1.2.0...v1.2.1)
+
+**Merged pull requests:**
+
+- Bump bourbon to 4.2.6 [\#14](https://github.com/yapplabs/ember-cli-bourbon/pull/14) ([luqman](https://github.com/luqman))
+
 ## [v1.2.0](https://github.com/yapplabs/ember-cli-bourbon/tree/v1.2.0) (2015-12-30)
 [Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v1.1.0...v1.2.0)
 
