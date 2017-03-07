@@ -1,5 +1,19 @@
 # Change Log
 
+## [v2.0.0-beta.0](https://github.com/yapplabs/ember-cli-bourbon/tree/v2.0.0-beta.0) (2017-03-07)
+[Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v1.2.2...v2.0.0-beta.0)
+
+**Merged pull requests:**
+
+- Drop bower and use bourbon npm module instead. [\#18](https://github.com/yapplabs/ember-cli-bourbon/pull/18) ([lukemelia](https://github.com/lukemelia))
+
+## [v1.2.2](https://github.com/yapplabs/ember-cli-bourbon/tree/v1.2.2) (2016-03-30)
+[Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v1.2.1...v1.2.2)
+
+**Merged pull requests:**
+
+- Update Ember CLI [\#15](https://github.com/yapplabs/ember-cli-bourbon/pull/15) ([lukemelia](https://github.com/lukemelia))
+
 ## [v1.2.1](https://github.com/yapplabs/ember-cli-bourbon/tree/v1.2.1) (2016-01-05)
 [Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v1.2.0...v1.2.1)
 
@@ -17,11 +31,6 @@
 ## [v1.1.0](https://github.com/yapplabs/ember-cli-bourbon/tree/v1.1.0) (2015-08-08)
 [Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v1.0.1...v1.1.0)
 
-**Closed issues:**
-
-- needs release [\#8](https://github.com/yapplabs/ember-cli-bourbon/issues/8)
-- Unable to install import Bourbon on Ember 0.2.2 [\#4](https://github.com/yapplabs/ember-cli-bourbon/issues/4)
-
 **Merged pull requests:**
 
 - Update ember-cli to v1.13.7 [\#12](https://github.com/yapplabs/ember-cli-bourbon/pull/12) ([HeroicEric](https://github.com/HeroicEric))
@@ -30,20 +39,12 @@
 ## [v1.0.1](https://github.com/yapplabs/ember-cli-bourbon/tree/v1.0.1) (2015-04-07)
 [Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/1.0.0...v1.0.1)
 
-**Closed issues:**
-
-- \[Deprecated\] this.pickFiles is deprecated warning for ember CLI 0.2.3 [\#7](https://github.com/yapplabs/ember-cli-bourbon/issues/7)
-
 **Merged pull requests:**
 
 - Upgrade ember-cli, add broccoli-funnel [\#6](https://github.com/yapplabs/ember-cli-bourbon/pull/6) ([abulrim](https://github.com/abulrim))
 
 ## [1.0.0](https://github.com/yapplabs/ember-cli-bourbon/tree/1.0.0) (2015-03-29)
 [Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/0.0.5...1.0.0)
-
-**Closed issues:**
-
-- Problem building after upgrade to ember-cli 0.1.2 [\#2](https://github.com/yapplabs/ember-cli-bourbon/issues/2)
 
 **Merged pull requests:**
 
