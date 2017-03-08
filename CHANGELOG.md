@@ -1,5 +1,12 @@
 # Change Log
 
+## [v2.0.0-beta.1](https://github.com/yapplabs/ember-cli-bourbon/tree/v2.0.0-beta.1) (2017-03-07)
+[Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v2.0.0-beta.0...v2.0.0-beta.1)
+
+**Merged pull requests:**
+
+- Remove reference to bower that I missed [\#19](https://github.com/yapplabs/ember-cli-bourbon/pull/19) ([lukemelia](https://github.com/lukemelia))
+
 ## [v2.0.0-beta.0](https://github.com/yapplabs/ember-cli-bourbon/tree/v2.0.0-beta.0) (2017-03-07)
 [Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v1.2.2...v2.0.0-beta.0)
 
