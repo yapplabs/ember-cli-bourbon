@@ -41,11 +41,9 @@
     "eslint-plugin-node": "^5.2.1",
     "loader.js": "^4.2.3"
   },
-  "keywords": [
-    "ember-addon"
-  ],
+  "keywords": ["ember-addon"],
   "dependencies": {
-    "bourbon": "^5.0.0",
+    "bourbon": "^5.0",
     "broccoli-funnel": "^2.0.1",
     "ember-cli-babel": "^6.6.0"
   },
