@@ -16,11 +16,15 @@ module.exports = {
 
     let target = findTargetHost(this, app)
 
-    this.bourbonPath = path.dirname(
-      require('resolve').sync('bourbon', {
-        basedir: target.project.root
-      })
-    )
+    try {
+      this.bourbonPath = path.dirname(
+        require('resolve').sync('bourbon', {
+          basedir: target.project.root
+        })
+      )
+    } catch (err) {
+      this.writeError(err.message)
+    }
   },
 
   treeForStyles() {
