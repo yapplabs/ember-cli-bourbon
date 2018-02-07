@@ -2,7 +2,7 @@
 
 const path = require('path')
 const Funnel = require('broccoli-funnel')
-const resolve = require('resolve')
+const resolveSync = require('resolve').sync
 
 module.exports = {
   name: 'ember-cli-bourbon',
@@ -18,7 +18,7 @@ module.exports = {
 
     try {
       this.bourbonPath = path.dirname(
-        resolve.sync('bourbon', {
+        resolveSync('bourbon', {
           basedir: target.project.root
         })
       )

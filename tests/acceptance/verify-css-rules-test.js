@@ -27,12 +27,6 @@ test('check that bourbon and sass are generating css that is getting applied', a
   assert.ok(fontStack.includes('"Lucida Grande"'), 'bourbon $font-stack-system is applied')
   assert.ok(fontStack.includes('"Helvetica Neue"'), 'bourbon $font-stack-system is applied')
 
-  // assert.equal(
-  //   fontStack,
-  //   '-apple-system, system-ui, "Avenir Next", Avenir, "Segoe UI", "Lucida Grande", "Helvetica Neue", Helvetica, "Fira Sans", Roboto, Noto, "Droid Sans", Cantarell, Oxygen, Ubuntu, "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif',
-  //   'bourbon $font-stack-system is applied'
-  // )
-
   let opacity = Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
   assert.equal(opacity, 0.6, 'opacity')
 
