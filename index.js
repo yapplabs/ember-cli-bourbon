@@ -23,7 +23,7 @@ module.exports = {
         })
       )
     } catch (err) {
-      this.writeError(err.message)
+      this.writeError(err)
     }
   },
 

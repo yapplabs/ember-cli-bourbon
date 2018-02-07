@@ -15,22 +15,26 @@ module('Acceptance: Verify CSS Rules', {
   }
 })
 
-test('check that bourbon and sass are generating css that is getting applied', function(assert) {
-  visit('/')
+test('check that bourbon and sass are generating css that is getting applied', async assert => {
+  await visit('/')
 
-  andThen(function() {
-    var opacity = Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
-    assert.equal(opacity, 0.6, 'opacity')
-  })
+  let fontStack = $('body').css('font-family')
+  assert.equal(
+    fontStack,
+    '-apple-system, system-ui, "Avenir Next", Avenir, "Segoe UI", "Lucida Grande", "Helvetica Neue", Helvetica, "Fira Sans", Roboto, Noto, "Droid Sans", Cantarell, Oxygen, Ubuntu, "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif',
+    'bourbon $font-stack-system is applied'
+  )
 
-  click('button')
+  let opacity = Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
+  assert.equal(opacity, 0.6, 'opacity')
 
-  andThen(function() {
-    var opacity = Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
-    assert.notEqual(opacity, 1.0, 'opacity') // still animating
-    later(function() {
-      var opacity = Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
-      assert.equal(opacity, 1.0, 'opacity')
-    }, 600)
-  })
+  await click('button')
+
+  opacity = Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
+  assert.notEqual(opacity, 1.0, 'opacity') // still animating
+
+  later(() => {
+    let opacity = Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
+    assert.equal(opacity, 1.0, 'opacity')
+  }, 600)
 })
