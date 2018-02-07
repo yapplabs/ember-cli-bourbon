@@ -1,28 +1,48 @@
-@import "bourbon";
+@import 'bourbon';
+
+html,
+body {
+  font-family: $font-stack-system;
+  -webkit-font-smoothing: antialiased;
+}
 
 ol.devs {
-  position:relative;
+  position: relative;
   > li {
-    font-family: $lucida-grande;
     position: relative;
     opacity: 0.6;
-    @include transition( all 0.5s );
+    transition: all 0.5s;
     &::after {
-      content: "dev";
+      content: 'dev';
       height: 26px;
       width: 33px;
-      @include position( absolute, 0px 50px 0 50px );
-      @include transition( all 0.5s );
+      position: absolute, 0px 50px 0 50px;
+      transition: all 0.5s;
     }
   }
   > li.cool {
-    opacity: 1.0;
-    background-color: #F4F5F7;
-    @include background-image( linear-gradient(to left, #0ff, #F4F5F7) );
+    opacity: 1;
+    background-color: #f4f5f7;
+    background-image: linear-gradient(to left, #0ff, #f4f5f7);
 
     &::after {
-      @include transform( rotate(25deg) skew(10deg, 20deg) );
+      transform: rotate(25deg) skew(10deg, 20deg);
       color: blue;
     }
+  }
+}
+
+button {
+  -webkit-appearance: none;
+  background-color: #fafbfc;
+  border: 1px solid;
+  border-color: #f4f5f7;
+  border-radius: 5px;
+  padding: 8px 16px;
+  outline: none;
+
+  &:focus {
+    border: 2px solid #4c9aff;
+    padding: 7px 15px;
   }
 }

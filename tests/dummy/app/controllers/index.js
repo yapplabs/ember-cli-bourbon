@@ -1,10 +1,10 @@
-import Ember from 'ember';
+import Controller from '@ember/controller'
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   isCool: false,
   actions: {
-    toggleCool: function(){
-      this.toggleProperty('isCool');
+    toggleCool: function() {
+      this.toggleProperty('isCool')
     }
   }
-});
+})

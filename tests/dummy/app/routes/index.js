@@ -1,12 +1,7 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route'
 
-export default Ember.Route.extend({
-  model: function(){
-    return [
-      { name: 'Ray' },
-      { name: 'Kris' },
-      { name: 'Chris' },
-      { name: 'Luke' }
-    ];
+export default Route.extend({
+  model: function() {
+    return [{ name: 'Ray' }, { name: 'Kris' }, { name: 'Chris' }, { name: 'Luke' }]
   }
-});
+})
