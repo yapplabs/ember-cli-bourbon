@@ -1,8 +1,8 @@
-/* jshint node: true */
 'use strict'
 
-var path = require('path')
-var Funnel = require('broccoli-funnel')
+const path = require('path')
+const Funnel = require('broccoli-funnel')
+const resolve = require('resolve')
 
 module.exports = {
   name: 'ember-cli-bourbon',
@@ -18,7 +18,7 @@ module.exports = {
 
     try {
       this.bourbonPath = path.dirname(
-        require('resolve').sync('bourbon', {
+        resolve.sync('bourbon', {
           basedir: target.project.root
         })
       )
