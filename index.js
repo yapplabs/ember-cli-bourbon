@@ -2,7 +2,7 @@
 
 const path = require('path')
 const Funnel = require('broccoli-funnel')
-const resolveSync = require('resolve').sync
+const resolveSync = require('resolve').sync // eslint-disable-line
 
 module.exports = {
   name: 'ember-cli-bourbon',
