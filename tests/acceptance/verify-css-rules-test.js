@@ -23,20 +23,32 @@ test('check that bourbon and sass are generating css that is getting applied', a
     .split(',')
     .map(s => s.trim())
 
-  assert.ok(fontStack.includes('-apple-system'), 'bourbon $font-stack-system is applied')
-  assert.ok(fontStack.includes('"Lucida Grande"'), 'bourbon $font-stack-system is applied')
-  assert.ok(fontStack.includes('"Helvetica Neue"'), 'bourbon $font-stack-system is applied')
+  assert.ok(
+    fontStack.includes('-apple-system'),
+    'bourbon $font-stack-system is applied'
+  )
+  assert.ok(
+    fontStack.includes('"Lucida Grande"'),
+    'bourbon $font-stack-system is applied'
+  )
+  assert.ok(
+    fontStack.includes('"Helvetica Neue"'),
+    'bourbon $font-stack-system is applied'
+  )
 
-  let opacity = Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
+  let opacity =
+    Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
   assert.equal(opacity, 0.6, 'opacity')
 
   await click('button')
 
-  opacity = Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
+  opacity =
+    Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
   assert.notEqual(opacity, 1.0, 'opacity') // still animating
 
   later(() => {
-    let opacity = Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
+    let opacity =
+      Math.floor(parseFloat($('.devs li:eq(0)').css('opacity')) * 10) / 10.0
     assert.equal(opacity, 1.0, 'opacity')
   }, 600)
 })
