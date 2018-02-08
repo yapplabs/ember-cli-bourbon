@@ -4,4 +4,4 @@
   {{/each}}
 </ol>
 
-<button {{action "toggleCool"}}>Make 'em {{if isCool 'un'}}cool</button>
+<button is-cool={{isCool}} {{action "toggleCool"}}>Make 'em {{if isCool 'un'}}cool</button>

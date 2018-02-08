@@ -1,33 +1,62 @@
-/* jshint node: true */
-'use strict';
+'use strict'
 
-var path = require('path');
-var Funnel = require('broccoli-funnel');
+const path = require('path')
+const Funnel = require('broccoli-funnel')
+const resolveSync = require('resolve').sync // eslint-disable-line
 
 module.exports = {
   name: 'ember-cli-bourbon',
 
-  blueprintsPath: function() {
-    return path.join(__dirname, 'blueprints');
+  blueprintsPath() {
+    return path.join(__dirname, 'blueprints')
   },
 
-  included: function(app) {
-    this._super.included.apply(this, arguments);
+  included(app) {
+    this._super.included.apply(this, arguments)
 
-    // see: https://github.com/ember-cli/ember-cli/issues/3718
-    while (typeof app.import !== 'function' && app.app) {
-      app = app.app;
+    let target = findTargetHost(this, app)
+
+    try {
+      this.bourbonPath = path.dirname(
+        resolveSync('bourbon', {
+          basedir: target.project.root
+        })
+      )
+    } catch (err) {
+      this.writeError(err)
     }
-
-    this.bourbonPath = path.dirname(require.resolve('bourbon'));
-    return app;
   },
 
-  treeForStyles: function() {
+  treeForStyles() {
     return new Funnel(this.bourbonPath, {
-      srcDir: 'app/assets/stylesheets',
+      srcDir: 'core',
       destDir: 'app/styles',
       annotation: 'Funnel (bourbon)'
-    });
+    })
   }
-};
+}
+
+function findTargetHost(addon, app) {
+  let target = app
+
+  if (typeof addon.import === 'function') {
+    target = addon
+  } else {
+    // If the addon has the _findHost() method (in ember-cli >= 2.7.0), we'll just
+    // use that.
+    if (typeof addon._findHost === 'function') {
+      target = addon._findHost()
+    }
+
+    // Otherwise, we'll use this implementation borrowed from the _findHost()
+    // method in ember-cli.
+    // Keep iterating upward until we don't have a grandparent.
+    // Has to do this grandparent check because at some point we hit the project.
+    let current = addon
+    do {
+      target = current.app || app
+    } while (current.parent.parent && (current = current.parent))
+  }
+
+  return target
+}
