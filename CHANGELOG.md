@@ -1,6 +1,14 @@
 # Change Log
 
-## [v2.0.0-beta.1](https://github.com/yapplabs/ember-cli-bourbon/tree/v2.0.0-beta.1) (2017-03-07)
+## [2.0.0](https://github.com/yapplabs/ember-cli-bourbon/tree/2.0.0) (2018-02-24)
+[Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v2.0.0-beta.1...2.0.0)
+
+**Merged pull requests:**
+
+- Add documentation for choosing a bourbon version [\#22](https://github.com/yapplabs/ember-cli-bourbon/pull/22) ([jrjohnson](https://github.com/jrjohnson))
+- Upgrades to Bourbon 5.0 and Ember CLI 2.18 [\#21](https://github.com/yapplabs/ember-cli-bourbon/pull/21) ([ivanvanderbyl](https://github.com/ivanvanderbyl))
+
+## [v2.0.0-beta.1](https://github.com/yapplabs/ember-cli-bourbon/tree/v2.0.0-beta.1) (2017-03-08)
 [Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v2.0.0-beta.0...v2.0.0-beta.1)
 
 **Merged pull requests:**
