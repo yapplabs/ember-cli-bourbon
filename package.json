@@ -8,8 +8,7 @@
   },
   "scripts": {
     "start": "ember serve",
-    "lint:js":
-      "eslint ./*.js addon addon-test-support app config lib server test-support tests",
+    "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
     "build": "ember build",
     "test": "ember try:each"
   },
@@ -29,6 +28,7 @@
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.1.1",
+    "ember-cli-release": "1.0.0-beta.2",
     "ember-cli-sass": "^7.1.4",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
@@ -42,7 +42,11 @@
     "eslint-plugin-node": "^5.2.1",
     "loader.js": "^4.2.3"
   },
-  "keywords": ["ember-addon", "bourbon", "css"],
+  "keywords": [
+    "ember-addon",
+    "bourbon",
+    "css"
+  ],
   "dependencies": {
     "bourbon": "^5.0",
     "broccoli-funnel": "^2.0.1",
