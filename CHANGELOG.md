@@ -1,7 +1,14 @@
 # Change Log
 
-## [2.0.0](https://github.com/yapplabs/ember-cli-bourbon/tree/2.0.0) (2018-02-24)
-[Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v2.0.0-beta.1...2.0.0)
+## [2.0.1](https://github.com/yapplabs/ember-cli-bourbon/tree/2.0.1) (2018-03-09)
+[Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v2.0.0...2.0.1)
+
+**Merged pull requests:**
+
+- Add missing dependency on `resolve` [\#24](https://github.com/yapplabs/ember-cli-bourbon/pull/24) ([lukemelia](https://github.com/lukemelia))
+
+## [v2.0.0](https://github.com/yapplabs/ember-cli-bourbon/tree/v2.0.0) (2018-02-24)
+[Full Changelog](https://github.com/yapplabs/ember-cli-bourbon/compare/v2.0.0-beta.1...v2.0.0)
 
 **Merged pull requests:**
 
